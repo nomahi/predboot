@@ -9,5 +9,5 @@ A R package for computing optimism-corrected predictive accuracy measures for mu
 \references{
 Noma, H., Shinozaki, T., Iba, K. and Teramukai, S. (2020). 
 Confidence intervals of prediction accuracy measures for multivariable prediction models based on the bootstrap-based optimism correction methods. 
-In Preparation
+In Preparation.
 }

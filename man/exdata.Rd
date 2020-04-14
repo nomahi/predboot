@@ -1,7 +1,7 @@
 \docType{data}
 \name{exdata}
 \alias{exdata}
-\title{A hypothetical cohort dataset}
+\title{A hypothetical simulated cohort dataset based on the GUSTO-1 clinical trial}
 \format{A data frame with 2880 rows and 21 variables}
 \usage{
 data(exdata)
