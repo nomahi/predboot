@@ -9,14 +9,14 @@ pred.ridge(model, data, B=1000, alpha=0.05, Cores=detectCores())
 
 \item{data}{Dataset. The outcome variable must be named as \code{Y} and the ID variable must be named as \code{ID}}
 
-\item{B}{The number of bootstrap resampling (defalt: 2000)}
+\item{B}{The number of bootstrap resampling (defalt: 1000)}
 
 \item{alpha}{The confidence level for the confidence interval of AUC (1-\code{alpha}; default: 95\%)}
 
 \item{Cores}{The number of cores to be used for parallel computations (if the user don't want to implement parallel computations, please set to 1).}
 }
 \value{
-Prediction accuracy measures for logistic regression model by ML estimation.
+Prediction accuracy measures for logistic regression model by ridge estimation.
 \itemize{
 \item \code{glmnet.output}: \code{glmnet} output for the logistic regression.
 \item \code{N.obs}: Number of observations.

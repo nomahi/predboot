@@ -9,7 +9,7 @@ pred.ridge2(model, data, B=1000, alpha=0.05, Cores=detectCores())
 
 \item{data}{Dataset. The outcome variable must be named as \code{Y} and the ID variable must be named as \code{ID}}
 
-\item{B}{The number of bootstrap resampling (defalt: 2000)}
+\item{B}{The number of bootstrap resampling (defalt: 1000)}
 
 \item{alpha}{The confidence level for the confidence interval of AUC (1-\code{alpha}; default: 95\%)}
 
