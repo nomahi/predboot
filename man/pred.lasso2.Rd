@@ -1,8 +1,8 @@
-\name{pred.ML2}
-\alias{pred.ML2}
-\title{Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model by ML (maximum likelihood) estimation}
+\name{pred.lasso2}
+\alias{pred.lasso2}
+\title{Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model by lasso estimation}
 \usage{
-pred.ML2(model, data, B=1000, alpha=0.05, Cores=detectCores())
+pred.lasso2(model, data, B=1000, alpha=0.05, Cores=detectCores())
 }
 \arguments{
 \item{model}{A model formula for the logistic regression model}
@@ -16,9 +16,9 @@ pred.ML2(model, data, B=1000, alpha=0.05, Cores=detectCores())
 \item{Cores}{The number of cores to be used for parallel computations (if the user don't want to implement parallel computations, please set to 1).}
 }
 \value{
-Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model. Note that the point estimates are not provided. These outputs are calculated by \code{pred.ML}.
+Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model. Note that the point estimates are not provided. These outputs are calculated by \code{pred.lasso}.
 \itemize{
-\item \code{glm.output}: \code{glm} output for the logistic regression.
+\item \code{glm.output}: \code{glmnet} output for the logistic regression.
 \item \code{N.obs}: Number of observations.
 \item \code{N.boot}: Number of bootstrap resampling.
 \item \code{C.Harrell_2BSCI}: Two stage bootstrap confidence interval by the Harrell's bias correction.
@@ -33,11 +33,11 @@ Confidence intervals of prediction accuracy measures for multivariable predictio
 In Preparation.
 }
 \description{
-Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model by ML (maximum likelihood) estimation. 
+Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model by lasso estimation. 
 }
 \examples{
 data(exdata)
 
-pred.ML2(Y ~ A65 + SEX + DIA + HYP + HRT + HIG + SHO + TTR, data=exdata, B=1000)
-pred.ML2(Y ~ A65 + SEX + DIA + HYP + HRT + HIG + SHO + TTR + PMI + HEI + WEI + HTN + SMK1 + SMK2 + LIP + PAN + FAM + ST4, data=exdata, B=1000)
+pred.lasso2(Y ~ A65 + SEX + DIA + HYP + HRT + HIG + SHO + TTR, data=exdata, B=1000)
+pred.lasso2(Y ~ A65 + SEX + DIA + HYP + HRT + HIG + SHO + TTR + PMI + HEI + WEI + HTN + SMK1 + SMK2 + LIP + PAN + FAM + ST4, data=exdata, B=1000)
 }
