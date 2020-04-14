@@ -16,9 +16,8 @@ pred.ML(model, data, B=1000, alpha=0.05, Cores=detectCores())
 \item{Cores}{The number of cores to be used for parallel computations (if the user don't want to implement parallel computations, please set to 1).}
 }
 \value{
-.
-\itemize{
 Prediction accuracy measures for logistic regression model by ML estimation.
+\itemize{
 \item \code{glm.output}: \code{glm} output for the logistic regression.
 \item \code{N.obs}: Number of observations.
 \item \code{N.boot}: Number of bootstrap resampling.
