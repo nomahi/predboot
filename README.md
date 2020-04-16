@@ -18,5 +18,3 @@ A R package for computations of optimism-corrected predictive accuracy measures 
 # install.packages("predboot")
 devtools::install_github("nomahi/predboot")
 ```
-
-Downloads: [please see the release page](https://github.com/nomahi/predboot/releases)
