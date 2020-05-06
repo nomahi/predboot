@@ -30,7 +30,8 @@ Two stage bootstrap confidence intervals for prediction accuracy measures of log
 \references{
 Noma, H., Shinozaki, T., Iba, K. and Teramukai, S. (2020). 
 Confidence intervals of prediction accuracy measures for multivariable prediction models based on the bootstrap-based optimism correction methods. 
-In Preparation.
+arXiv:2005.01457.
+\url{https://arxiv.org/abs/2005.01457}
 }
 \description{
 Two stage bootstrap confidence intervals for prediction accuracy measures of logistic regression model by ML (maximum likelihood) estimation. 
