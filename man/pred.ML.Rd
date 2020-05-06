@@ -34,7 +34,7 @@ Prediction accuracy measures for logistic regression model by ML estimation.
 }
 \author{Hisashi Noma <noma@ism.ac.jp>}
 \references{
-Noma, H., Shinozaki, T., Iba, K. and Teramukai, S. (2020). 
+Noma, H., Shinozaki, T., Iba, K., Teramukai, S. and Furukawa, T. A. (2020). 
 Confidence intervals of prediction accuracy measures for multivariable prediction models based on the bootstrap-based optimism correction methods. 
 arXiv:2005.01457.
 \url{https://arxiv.org/abs/2005.01457}
